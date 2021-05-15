@@ -28,6 +28,7 @@
         <java.version>11</java.version>
         <mapstruct.version>1.4.2.Final</mapstruct.version>
         <org.lombok.version>1.18.18</org.lombok.version>
+        <maven.deploy.skip>true</maven.deploy.skip>
     </properties>
 
     <dependencies>
@@ -115,6 +116,16 @@
                         </image>
                     </images>
                 </configuration>
+                <executions>
+                    <execution>
+                        <id>push-to-docker</id>
+                        <phase>deploy</phase>
+                        <goals>
+                            <goal>build</goal>
+                            <goal>push</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
