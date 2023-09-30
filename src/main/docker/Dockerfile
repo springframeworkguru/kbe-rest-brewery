@@ -1,6 +1,6 @@
 FROM openjdk:11-jre-slim as builder
 WORKDIR application
-ADD target/kbe-rest-brewery-0.0.1-SNAPSHOT.jar ./
+ADD maven/kbe-rest-brewery-0.0.1-SNAPSHOT.jar ./
 RUN java -Djarmode=layertools -jar kbe-rest-brewery-0.0.1-SNAPSHOT.jar extract
 
 FROM openjdk:11-jre-slim
