@@ -81,6 +81,10 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
+                    <layers>
+                        <enabled>true</enabled>
+                        <includeLayerTools>true</includeLayerTools>
+                    </layers>
                     <excludes>
                         <exclude>
                             <groupId>org.projectlombok</groupId>
@@ -120,6 +124,6 @@
     </build>
 
     <scm>
-        <url>https://github.com/sfg-beer-works/sfg-restful-brewery</url>
+        <url>https://github.com/sudharshanc/kbe-rest-brewery</url>
     </scm>
 </project>
