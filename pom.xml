@@ -27,7 +27,7 @@
     <properties>
         <java.version>11</java.version>
         <mapstruct.version>1.4.2.Final</mapstruct.version>
-        <org.lombok.version>1.18.18</org.lombok.version>
+        <org.lombok.version>1.18.30</org.lombok.version>
     </properties>
 
     <dependencies>
